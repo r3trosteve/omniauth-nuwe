@@ -2,14 +2,14 @@ require "omniauth-oauth2"
 
 module OmniAuth
   module Strategies
-    class Nuwe < OmniAuth::Strategies::OAuth2
+    class Picniq < OmniAuth::Strategies::OAuth2
 
-      option :name, "nuwe"
+      option :name, "picniq"
 
       option :client_options, {
-        :site => "https://developer.nuwe.co",
-        :authorize_url => "https://developer.nuwe.co/oauth/authorize",
-        :token_url => "https://developer.nuwe.co/oauth/token"
+        :site => "http://kangaroo.picniq-platform.c66.me",
+        :authorize_url => "http://kangaroo.picniq-platform.c66.me/oauth/authorize",
+        :token_url => "http://kangaroo.picniq-platform.c66.me/oauth/token"
       }
 
       uid { raw_info["user"]["id"] }

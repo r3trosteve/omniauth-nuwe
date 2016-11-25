@@ -1,6 +1,6 @@
 require 'bundler/setup'
 require 'rspec'
-require 'omniauth-nuwe'
+require 'omniauth-picniq'
 
 RSpec.configure do |config|
 end

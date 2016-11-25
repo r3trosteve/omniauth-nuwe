@@ -1,21 +1,21 @@
 require 'spec_helper'
 
-describe "OmniAuth::Strategies::Nuwe" do
+describe "OmniAuth::Strategies::Picniq" do
   subject do
-    OmniAuth::Strategies::Nuwe.new({})
+    OmniAuth::Strategies::Picniq.new({})
   end
 
   context 'client options' do
     it 'has the correct name' do
-      expect(subject.options.name).to eq('nuwe')
+      expect(subject.options.name).to eq('picniq')
     end
 
     it 'has correct OAuth endpoint' do
-      expect(subject.options.client_options.site).to eq('https://developer.nuwe.co')
+      expect(subject.options.client_options.site).to eq('http://kangaroo.picniq-platform.c66.me')
     end
 
     it 'has correct authorize url' do
-      expect(subject.options.client_options.authorize_url).to eq('https://developer.nuwe.co/oauth/authorize')
+      expect(subject.options.client_options.authorize_url).to eq('http://kangaroo.picniq-platform.c66.me/oauth/authorize')
     end
   end
 
@@ -42,7 +42,7 @@ describe "OmniAuth::Strategies::Nuwe" do
                                   'activity' => 2 }
                               }
                   }
-                  
+
       allow(subject).to receive_messages(:raw_info => @raw_info)
     end
 

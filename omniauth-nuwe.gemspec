@@ -1,14 +1,14 @@
 # coding: utf-8
-require File.expand_path('../lib/omniauth-nuwe/version', __FILE__)
+require File.expand_path('../lib/omniauth-picniq/version', __FILE__)
 
 Gem::Specification.new do |spec|
-  spec.name          = "omniauth-nuwe"
-  spec.version       = Omniauth::Nuwe::VERSION
-  spec.authors       = ["Stephanie Nemeth"]
-  spec.email         = ["stephanie@spacebabies.nl"]
-  spec.summary       = %q{OmniAuth strategy for Nuwe.}
-  spec.description   = %q{OmniAuth strategy for Nuwe.}
-  spec.homepage      = "https://github.com/nuwehq/omniauth-nuwe/"
+  spec.name          = "omniauth-picniq"
+  spec.version       = Omniauth::Picniq::VERSION
+  spec.authors       = ["Steve Schofield"]
+  spec.email         = ["steve@beach.io"]
+  spec.summary       = %q{OmniAuth strategy for Picniq.}
+  spec.description   = %q{OmniAuth strategy for Picniq.}
+  spec.homepage      = "https://github.com/r3trosteve/omniauth-picniq/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split("\n")

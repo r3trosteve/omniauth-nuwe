@@ -1,5 +1,5 @@
 module Omniauth
-  module Nuwe
+  module Picniq
     VERSION = "1.0.3"
   end
 end
